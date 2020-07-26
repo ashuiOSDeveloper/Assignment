@@ -114,9 +114,7 @@ class ViewController: UIViewController
             let url = URL(string: urlString)!
             guard let data = try? Data(contentsOf: url)
                 else {
-                  //  return UIImage(named: "placeholder")!
-                    return UIImage(systemName: "line.horizontal.3")
-                    
+                    return UIImage(named: "placeholder")!                    
             }
             UserDefaults.standard.set(data, forKey: urlString)
             let downloadedImage = UIImage(data: data)
