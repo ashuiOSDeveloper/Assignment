@@ -81,7 +81,7 @@ class ViewController: UIViewController
                     let imageSourceString = "https://picsum.photos/200/200?image=\(temp["id"] as? Int ?? 0)"
                     let image = self.displaImageFrom(this: imageSourceString)
                     
-                    self.mainDataArray.append(DisplayData(imageAuthorName: temp["author"] as? String, imageURL: imageSourceString, image: image))
+                    self.mainDataArray.append(DisplayData(imageAuthorName: temp["author"] as? String, image: image))
                     
                 }
                 DispatchQueue.main.async {

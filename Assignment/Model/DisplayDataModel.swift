@@ -13,7 +13,7 @@ struct DisplayData {
     var imageAuthorName : String?
     var image : UIImage?
     
-    init(imageAuthorName : String?,imageURL : String?,image : UIImage?) {
+    init(imageAuthorName : String? ,image : UIImage?) {
         self.imageAuthorName = imageAuthorName
         self.image = image
     }

@@ -32,9 +32,6 @@ class PhotoCollectionViewCell: UICollectionViewCell
         contentView.backgroundColor = .clear
         contentView.addSubview(imageDisplay)
         contentView.addSubview(imageAuthorName)
-       // contentView.layer.borderWidth = 1
-        //contentView.layer.borderColor = UIColor.lightGray.cgColor
-        
         imageDisplay.topAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.topAnchor, constant: 2).isActive = true
         imageDisplay.bottomAnchor.constraint(equalToSystemSpacingBelow: imageAuthorName.topAnchor, multiplier: 8).isActive = true
         imageDisplay.leftAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.leftAnchor, constant: 2).isActive = true
